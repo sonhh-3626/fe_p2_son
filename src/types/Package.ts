@@ -28,3 +28,20 @@ export interface Package {
   location: string;
   mapUrl: string;
 }
+
+export type SortDirection = 'asc' | 'desc' | null;
+
+export interface SortConfig {
+  key: string;
+  direction: SortDirection;
+}
+
+export interface TableColumn<T> {
+  key: string;
+  label: string;
+  sortable?: boolean;
+  render: (item: T) => React.ReactNode;
+  headerAlign?: 'left' | 'center' | 'right';
+  cellAlign?: 'left' | 'center' | 'right';
+  width?: string;
+}
