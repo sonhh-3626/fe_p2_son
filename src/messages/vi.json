@@ -305,5 +305,27 @@
   },
   "AdminPackageList": {
     "failedToDeletePackage": "Xóa gói thất bại"
+  },
+  "BookingSummary": {
+    "tourCode": "Mã tour",
+    "checkInDate": "Ngày khởi hành",
+    "checkOutDate": "Ngày kết thúc",
+    "numberOfTickets": "Số lượng vé",
+    "total": "Tổng cộng",
+    "cancelTour": "Hủy Tour"
+  },
+  "PaymentMethod": {
+    "title": "Phương Thức Thanh Toán",
+    "transferPayment": "Thanh toán chuyển khoản"
+  },
+  "BookingSchema": {
+    "packageIdNumber": "Mã gói phải là số",
+    "nameRequired": "Tên là bắt buộc",
+    "invalidEmail": "Địa chỉ email không hợp lệ",
+    "phoneMinLength": "Số điện thoại phải có ít nhất 10 ký tự",
+    "phoneMaxLength": "Số điện thoại không được vượt quá 15 ký tự",
+    "dateRequired": "Ngày là bắt buộc",
+    "ticketsNumber": "Số lượng vé phải là một số",
+    "ticketsRequired": "Số lượng vé là bắt buộc"
   }
 }

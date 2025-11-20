@@ -326,5 +326,27 @@
   },
   "AdminPackageList": {
     "failedToDeletePackage": "Failed to delete package"
+  },
+  "BookingSummary": {
+    "tourCode": "Tour Code",
+    "checkInDate": "Check-in Date",
+    "checkOutDate": "Check-out Date",
+    "numberOfTickets": "Number of Tickets",
+    "total": "Total",
+    "cancelTour": "Cancel Tour"
+  },
+  "PaymentMethod": {
+    "title": "Payment Method",
+    "transferPayment": "Bank Transfer"
+  },
+  "BookingSchema": {
+    "packageIdNumber": "Package ID must be a number",
+    "nameRequired": "Name is required",
+    "invalidEmail": "Invalid email address",
+    "phoneMinLength": "Phone number must be at least 10 characters",
+    "phoneMaxLength": "Phone number must not exceed 15 characters",
+    "dateRequired": "Date is required",
+    "ticketsNumber": "Number of tickets must be a number",
+    "ticketsRequired": "Number of tickets is required"
   }
 }
