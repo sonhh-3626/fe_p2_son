@@ -254,5 +254,24 @@
     "dateRequired": "Ngày là bắt buộc",
     "ticketsNumber": "Số lượng vé phải là một số",
     "ticketsRequired": "Số lượng vé là bắt buộc"
+  },
+  "PackageListPage": {
+    "packageColumn": "Gói",
+    "locationColumn": "Địa điểm",
+    "priceColumn": "Giá",
+    "ratingColumn": "Đánh giá",
+    "participantsColumn": "Người tham gia",
+    "deadlineColumn": "Hạn chót",
+    "actionsColumn": "Thao tác",
+    "viewDetailsButton": "Xem chi tiết"
+  },
+  "ResultsCount": {
+    "showing": "Hiển thị",
+    "of": "trên",
+    "results": "kết quả"
+  },
+  "PackageFilters": {
+    "searchPlaceholder": "Tìm kiếm theo tên...",
+    "locationFilterPlaceholder": "Lọc theo địa điểm..."
   }
 }

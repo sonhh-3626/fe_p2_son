@@ -931,58 +931,94 @@
   ],
   "bookings": [
     {
-      "userId": "1",
       "id": 1636810450,
+      "userId": "1",
       "packageId": 1,
       "status": "completed",
-      "checkIn": "Th 4, 13 Thg 8",
-      "checkOut": "Th 6, 15 Thg 8",
-      "createdAt": "2024-08-01"
+      "checkIn": "2024-08-13",
+      "checkOut": "2024-08-15",
+      "createdAt": "2024-08-01",
+      "name": "Nguyễn Văn A",
+      "email": "nguyenvana@gmail.com",
+      "phone": "0901234567",
+      "numberOfTickets": 2,
+      "paymentMethod": "Credit Card",
+      "message": ""
     },
     {
-      "userId": "1",
       "id": 1636810451,
+      "userId": "1",
       "packageId": 2,
       "status": "upcoming",
-      "checkIn": "Th 2, 20 Thg 11",
-      "checkOut": "Th 7, 25 Thg 11",
-      "createdAt": "2024-11-10"
+      "checkIn": "2024-11-20",
+      "checkOut": "2024-11-25",
+      "createdAt": "2024-11-10",
+      "name": "Trần Thị B",
+      "email": "tranthib@gmail.com",
+      "phone": "0912345678",
+      "numberOfTickets": 3,
+      "paymentMethod": "Bank Transfer",
+      "message": ""
     },
     {
-      "userId": "1",
       "id": 1636810452,
+      "userId": "1",
       "packageId": 3,
       "status": "upcoming",
-      "checkIn": "Th 3, 18 Thg 12",
-      "checkOut": "Th 6, 21 Thg 12",
-      "createdAt": "2024-11-12"
+      "checkIn": "2024-12-18",
+      "checkOut": "2024-12-21",
+      "createdAt": "2024-11-12",
+      "name": "Lê Văn C",
+      "email": "levanc@gmail.com",
+      "phone": "0923456789",
+      "numberOfTickets": 2,
+      "paymentMethod": "E-wallet",
+      "message": ""
     },
     {
-      "userId": "1",
       "id": 1636810453,
+      "userId": "1",
       "packageId": 4,
       "status": "cancelled",
-      "checkIn": "Th 5, 10 Thg 10",
-      "checkOut": "Th 2, 15 Thg 10",
-      "createdAt": "2024-09-25"
+      "checkIn": "2024-10-10",
+      "checkOut": "2024-10-15",
+      "createdAt": "2024-09-25",
+      "name": "Phạm Thị D",
+      "email": "phamthid@gmail.com",
+      "phone": "0934567890",
+      "numberOfTickets": 4,
+      "paymentMethod": "Credit Card",
+      "message": "Hủy do thay đổi lịch"
     },
     {
-      "userId": "1",
       "id": 1636810454,
+      "userId": "1",
       "packageId": 5,
       "status": "completed",
-      "checkIn": "Th 2, 5 Thg 9",
-      "checkOut": "Th 7, 10 Thg 9",
-      "createdAt": "2024-08-20"
+      "checkIn": "2024-09-05",
+      "checkOut": "2024-09-10",
+      "createdAt": "2024-08-20",
+      "name": "Hoàng Văn E",
+      "email": "hoangvane@gmail.com",
+      "phone": "0945678901",
+      "numberOfTickets": 5,
+      "paymentMethod": "Bank Transfer",
+      "message": ""
     },
     {
-      "userId": "1",
       "id": 1636810455,
+      "userId": "1",
       "packageId": 6,
       "status": "upcoming",
-      "checkIn": "Th 4, 1 Thg 12",
-      "checkOut": "Th 2, 6 Thg 12",
-      "createdAt": "2024-11-14"
+      "checkIn": "2024-12-01",
+      "checkOut": "2024-12-06",
+      "createdAt": "2024-11-14",
+      "name": "Đỗ Thị F",
+      "email": "dothif@gmail.com",
+      "phone": "0956789012",
+      "numberOfTickets": 2,
+      "paymentMethod": "E-wallet",
+      "message": ""
     },
     {
       "id": 1636810456,
@@ -990,12 +1026,13 @@
       "packageId": 4,
       "status": "upcoming",
       "checkIn": "2025-11-22",
-      "checkOut": "2025-11-22",
+      "checkOut": "2025-11-25",
       "createdAt": "2025-11-20T05:50:40.433Z",
-      "name": "Son Ha",
+      "name": "Sơn Hà",
       "email": "ha.hong.son@sun-asterisk.com",
       "phone": "0397541644",
       "numberOfTickets": 3,
+      "paymentMethod": "Credit Card",
       "message": ""
     },
     {
@@ -1004,13 +1041,14 @@
       "packageId": 12,
       "status": "upcoming",
       "checkIn": "2025-11-21",
-      "checkOut": "2025-11-21",
+      "checkOut": "2025-11-24",
       "createdAt": "2025-11-20T07:59:34.085Z",
-      "name": "Ha Hong Son",
+      "name": "Hà Hồng Sơn",
       "email": "sonhh2003@gmail.com",
       "phone": "0397541644",
       "numberOfTickets": 5,
-      "message": "Mua cho chau"
+      "paymentMethod": "Bank Transfer",
+      "message": "Mua cho cháu"
     }
   ]
 }

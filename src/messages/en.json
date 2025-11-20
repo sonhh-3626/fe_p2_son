@@ -253,5 +253,24 @@
     "dateRequired": "Date is required",
     "ticketsNumber": "Number of tickets must be a number",
     "ticketsRequired": "Number of tickets is required"
+  },
+  "PackageListPage": {
+    "packageColumn": "Package",
+    "locationColumn": "Location",
+    "priceColumn": "Price",
+    "ratingColumn": "Rating",
+    "participantsColumn": "Participants",
+    "deadlineColumn": "Deadline",
+    "actionsColumn": "Actions",
+    "viewDetailsButton": "View Details"
+  },
+  "ResultsCount": {
+    "showing": "Showing",
+    "of": "of",
+    "results": "results"
+  },
+  "PackageFilters": {
+    "searchPlaceholder": "Search by name...",
+    "locationFilterPlaceholder": "Filter by location..."
   }
 }
