@@ -251,5 +251,33 @@
   "PackageFilters": {
     "searchPlaceholder": "Tìm kiếm theo tên...",
     "locationFilterPlaceholder": "Lọc theo địa điểm..."
+  },
+  "admin": {
+    "users": {
+      "pageHeader": {
+        "title": "Quản lý Người dùng",
+        "addNewButton": "Thêm Người Dùng Mới"
+      },
+      "table": {
+        "columns": {
+          "user": "Người dùng",
+          "role": "Vai trò",
+          "status": "Trạng thái",
+          "actions": "Thao tác"
+        },
+        "actions": {
+          "view": "Xem",
+          "edit": "Sửa"
+        }
+      },
+      "alerts": {
+        "viewDetailsLog": "Xem chi tiết người dùng: {id}",
+        "viewDetails": "Xem chi tiết người dùng ID: {id}",
+        "editLog": "Chỉnh sửa người dùng: {id}",
+        "edit": "Chỉnh sửa người dùng ID: {id}",
+        "addNewLog": "Đã nhấp Thêm người dùng mới",
+        "addNewFeature": "Chức năng thêm người dùng mới sẽ được triển khai"
+      }
+    }
   }
 }

@@ -272,5 +272,33 @@
   "PackageFilters": {
     "searchPlaceholder": "Search by name...",
     "locationFilterPlaceholder": "Filter by location..."
+  },
+  "admin": {
+    "users": {
+      "pageHeader": {
+        "title": "User Management",
+        "addNewButton": "Add New User"
+      },
+      "table": {
+        "columns": {
+          "user": "User",
+          "role": "Role",
+          "status": "Status",
+          "actions": "Actions"
+        },
+        "actions": {
+          "view": "View",
+          "edit": "Edit"
+        }
+      },
+      "alerts": {
+        "viewDetailsLog": "View user details: {id}",
+        "viewDetails": "View user ID: {id}",
+        "editLog": "Edit user: {id}",
+        "edit": "Edit user ID: {id}",
+        "addNewLog": "Add new user clicked",
+        "addNewFeature": "New user addition feature will be implemented"
+      }
+    }
   }
 }

@@ -915,18 +915,28 @@
   ],
   "users": [
     {
-      "id": "1",
+      "id": 1,
+      "name": "Test User",
       "email": "test@example.com",
-      "password": "$2a$10$abcdefghijklmnopqrstuvwxy.abcdefghijklmnopqrstuvwxy.abcdefghijkl",
       "username": "testuser",
-      "role": "user"
+      "password": "$2a$10$abcdefghijklmnopqrstuvwxy.abcdefghijklmnopqrstuvwxy.abcdefghijkl",
+      "role": "user",
+      "avatar": "https://picsum.photos/seed/user1/100/100",
+      "phone": "123-456-7890",
+      "location": "New York, USA",
+      "status": "active"
     },
     {
-      "id": "2",
-      "username": "sonha1234",
+      "id": 2,
+      "name": "Son Ha",
       "email": "sonhh2003@gmail.com",
+      "username": "sonha1234",
       "password": "$2b$10$fxAFGXRMs2Yb3Qk9WCDRKe19qDUPNQeLwpoFPnQvzhxX.t4sswaa2",
-      "role": "admin"
+      "role": "admin",
+      "avatar": "https://picsum.photos/seed/user2/100/100",
+      "phone": "098-765-4321",
+      "location": "Ho Chi Minh, Vietnam",
+      "status": "active"
     }
   ],
   "bookings": [
