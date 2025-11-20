@@ -46,3 +46,6 @@ storybook-static
 .env*
 !.env.example
 __tests__/
+
+public/images/avatar
+db.json

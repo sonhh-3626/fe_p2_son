@@ -1,29 +1,29 @@
+import { useTranslations } from 'next-intl';
 
 export default function TableHeader() {
+  const t = useTranslations('PackageTableHeader');
+
+  const headers = [
+    { key: 'package', align: 'left' },
+    { key: 'location', align: 'left' },
+    { key: 'price', align: 'left' },
+    { key: 'rating', align: 'left' },
+    { key: 'participants', align: 'left' },
+    { key: 'deadline', align: 'left' },
+    { key: 'actions', align: 'right' },
+  ];
+
   return (
-    <thead className="bg-gray-50 border-b border-gray-200">
+    <thead className='bg-gray-50 border-b border-gray-200'>
       <tr>
-        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Package
-        </th>
-        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Địa điểm
-        </th>
-        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Giá
-        </th>
-        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Đánh giá
-        </th>
-        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Người tham gia
-        </th>
-        <th className="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Deadline
-        </th>
-        <th className="px-6 py-4 text-right text-xs font-semibold text-gray-600 uppercase tracking-wider">
-          Thao tác
-        </th>
+        {headers.map((h) => (
+          <th
+            key={h.key}
+            className={`px-6 py-4 text-${h.align} text-xs font-semibold text-gray-600 uppercase tracking-wider`}
+          >
+            {t(`${h.key}`)}
+          </th>
+        ))}
       </tr>
     </thead>
   );

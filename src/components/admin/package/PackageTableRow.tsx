@@ -1,9 +1,12 @@
-import { LuMapPin, LuUsers, LuCalendar } from "react-icons/lu";
+'use client';
+
+import { LuMapPin, LuUsers, LuCalendar } from 'react-icons/lu';
 import PackageInfo from './PackageInfo';
 import PriceDisplay from './PriceDisplay';
 import RatingDisplay from './RatingDisplay';
 import ActionButton from './ActionButton';
-import { Package } from '../../../types/Package'; // Assuming Package type will be moved here
+import { Package } from '../../../types/Package';
+import { useTranslations } from 'next-intl';
 
 interface PackageTableRowProps {
   package: Package;
@@ -11,6 +14,8 @@ interface PackageTableRowProps {
 }
 
 export default function PackageTableRow({ package: pkg, onViewDetails }: PackageTableRowProps) {
+  const t = useTranslations('PackageTableRow');
+
   return (
     <tr className="hover:bg-gray-50 transition-colors">
       <td className="px-6 py-4">
@@ -46,7 +51,7 @@ export default function PackageTableRow({ package: pkg, onViewDetails }: Package
       </td>
       <td className="px-6 py-4 text-right">
         <ActionButton onClick={() => onViewDetails(pkg.id)}>
-          Xem chi tiết
+          {t('viewDetails')}
         </ActionButton>
       </td>
     </tr>

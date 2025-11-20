@@ -1,5 +1,5 @@
-import { create } from "zustand";
-import { Package, SortConfig, SortDirection } from "@/types/Package";
+import { create } from 'zustand';
+import { Package, SortConfig, SortDirection } from '@/types/Package';
 
 type AdminPackageState = {
   packages: Package[];
@@ -20,16 +20,16 @@ type AdminPackageState = {
 export const useAdminPackageStore = create<AdminPackageState>((set, get) => ({
   packages: [],
   loading: false,
-  searchTerm: "",
-  locationFilter: "",
-  sortConfig: { key: "title", direction: "asc" },
+  searchTerm: '',
+  locationFilter: '',
+  sortConfig: { key: 'title', direction: 'asc' },
   currentPage: 1,
   itemsPerPage: 5,
 
   fetchPackages: async () => {
     set({ loading: true });
     try {
-      const res = await fetch("/api/admin/package");
+      const res = await fetch('/api/admin/package');
       const data: Package[] = await res.json();
       set({ packages: data });
     } finally {
@@ -41,9 +41,9 @@ export const useAdminPackageStore = create<AdminPackageState>((set, get) => ({
   setLocationFilter: (l) => set({ locationFilter: l, currentPage: 1 }),
   setSortConfig: (key) =>
     set((state) => {
-      let direction: SortDirection = "asc";
-      if (state.sortConfig.key === key && state.sortConfig.direction === "asc") {
-        direction = "desc";
+      let direction: SortDirection = 'asc';
+      if (state.sortConfig.key === key && state.sortConfig.direction === 'asc') {
+        direction = 'desc';
       }
       return { sortConfig: { key, direction }, currentPage: 1 };
     }),

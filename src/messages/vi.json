@@ -279,5 +279,26 @@
         "addNewFeature": "Chức năng thêm người dùng mới sẽ được triển khai"
       }
     }
+  },
+  "GenericPageDetail": {
+    "pageDetailTitle": "Chi tiết Trang {title}",
+    "defaultDescription": "Đây là khu vực hiển thị bảng dữ liệu, form chỉnh sửa, và các công cụ quản lý liên quan đến {titleLower}.",
+    "addButton": "Thêm mới",
+    "addButtonAria": "Thêm mới {title}"
+  },
+  "LoadingState": {
+    "loadingData": "Đang tải dữ liệu..."
+  },
+  "PackageTableRow": {
+    "viewDetails": "Xem chi tiết"
+  },
+  "PackageTableHeader": {
+    "package": "Package",
+    "location": "Địa điểm",
+    "price": "Giá",
+    "rating": "Đánh giá",
+    "participants": "Người tham gia",
+    "deadline": "Deadline",
+    "actions": "Thao tác"
   }
 }
