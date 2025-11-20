@@ -229,5 +229,45 @@
   },
   "SearchTool": {
     "searchPlaceholder": "Search by code, package name, or location"
+  },
+  "PackageListPage": {
+    "packageColumn": "Package",
+    "locationColumn": "Location",
+    "priceColumn": "Price",
+    "ratingColumn": "Rating",
+    "participantsColumn": "Participants",
+    "deadlineColumn": "Deadline",
+    "actionsColumn": "Actions",
+    "viewDetailsButton": "View Details"
+  },
+  "ResultsCount": {
+    "showing": "Showing",
+    "of": "of",
+    "results": "results"
+  },
+  "PackageFilters": {
+    "searchPlaceholder": "Search by name...",
+    "locationFilterPlaceholder": "Filter by location..."
+  },
+  "GenericPageDetail": {
+    "pageDetailTitle": "{title} Details",
+    "defaultDescription": "This section displays data tables, editing forms, and management tools related to {titleLower}.",
+    "addButton": "Add New",
+    "addButtonAria": "Add new {title}"
+  },
+  "LoadingState": {
+    "loadingData": "Loading data..."
+  },
+  "PackageTableRow": {
+    "viewDetails": "View detail"
+  },
+  "PackageTableHeader": {
+    "package": "Package",
+    "location": "Location",
+    "price": "Price",
+    "rating": "Rating",
+    "participants": "Participants",
+    "deadline": "Deadline",
+    "actions": "Actions"
   }
 }
