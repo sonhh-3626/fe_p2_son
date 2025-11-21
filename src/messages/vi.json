@@ -22,6 +22,7 @@
     "welcome": "Chào mừng",
     "logout": "Đăng xuất",
     "myBookings": "Đơn đặt chỗ của tôi",
+    "myProfile": "Hồ sơ của tôi",
     "settings": "Cài đặt"
   },
   "Footer": {
@@ -205,7 +206,6 @@
     "confirmLogoutTitle": "Xác nhận đăng xuất",
     "confirmLogoutMessage": "Bạn có chắc chắn muốn đăng xuất không?",
     "cancelBtn": "Hủy"
-
   },
   "BookingsPage": {
     "loadingBookings": "Đang tải các đơn đặt chỗ...",
@@ -327,5 +327,35 @@
     "dateRequired": "Ngày là bắt buộc",
     "ticketsNumber": "Số lượng vé phải là một số",
     "ticketsRequired": "Số lượng vé là bắt buộc"
+  },
+  "PasswordForm": {
+    "changePassword": "Đổi mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "confirmNewPassword": "Xác nhận mật khẩu mới",
+    "changePasswordSuccess": "Đổi mật khẩu thành công!"
+  },
+  "AvatarUpload": {
+    "uploadButton": "Tải ảnh lên",
+    "successMessage": "Cập nhật avatar thành công",
+    "fileGuidelines": "JPG, PNG hoặc WebP. Tối đa 5MB.",
+    "genericError": "Có lỗi xảy ra"
+  },
+  "ProfileForm": {
+    "personalInformation": "Thông tin cá nhân",
+    "username": "Username",
+    "usernamePlaceholder": "Nhập username",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "role": "Role",
+    "updateSuccess": "Cập nhật thông tin thành công!",
+    "updateButton": "Cập nhật thông tin"
+  },
+  "ProfilePage": {
+    "loading": "[translate:Đang tải...]",
+    "error": "[translate:Lỗi]",
+    "userNotFound": "[translate:Không tìm thấy người dùng]",
+    "tryAgain": "[translate:Thử lại]",
+    "yourProfile": "[translate:Profile của bạn]"
   }
 }

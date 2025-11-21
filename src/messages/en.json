@@ -22,6 +22,7 @@
     "welcome": "Welcome",
     "logout": "Logout",
     "myBookings": "My Bookings",
+    "myProfile": "My profile",
     "settings": "Settings"
   },
   "Footer": {
@@ -348,5 +349,35 @@
     "dateRequired": "Date is required",
     "ticketsNumber": "Number of tickets must be a number",
     "ticketsRequired": "Number of tickets is required"
+  },
+  "PasswordForm": {
+    "changePassword": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "changePasswordSuccess": "Password changed successfully!"
+  },
+  "AvatarUpload": {
+    "uploadButton": "Upload Image",
+    "successMessage": "Avatar updated successfully",
+    "fileGuidelines": "JPG, PNG, or WebP. Max 5MB.",
+    "genericError": "An error occurred"
+  },
+  "ProfileForm": {
+    "personalInformation": "Personal Information",
+    "username": "Username",
+    "usernamePlaceholder": "Enter username",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com ",
+    "role": "Role",
+    "updateSuccess": "Information updated successfully!",
+    "updateButton": "Update Information"
+  },
+  "ProfilePage": {
+    "loading": "Loading...",
+    "error": "Error",
+    "userNotFound": "User not found",
+    "tryAgain": "Try again",
+    "yourProfile": "Your Profile"
   }
 }
