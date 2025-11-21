@@ -4,6 +4,7 @@ import '../globals.css';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
 import Providers from '@/components/auth/Provider';
+import { QueryProviders } from './providers';
 
 export default async function RootLayout({
   children,
@@ -24,9 +25,11 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <Providers>
-            {children}
-          </Providers>
+          <QueryProviders>
+            <Providers>
+              {children}
+            </Providers>
+          </QueryProviders>
         </NextIntlClientProvider>
       </body>
     </html>

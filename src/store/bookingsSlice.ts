@@ -3,6 +3,7 @@ import { createSlice, createSelector, createAsyncThunk, PayloadAction } from '@r
 import { Booking } from '../types/Booking';
 import { RootState } from './store';
 import { fetchBookingsAPI } from '../libs/api/bookings';
+import { STALE_TIME_DEFAULT } from '@/constants/queryParams';
 
 interface BookingsState {
   bookings: Booking[];
@@ -29,7 +30,7 @@ export const fetchBookings = createAsyncThunk(
   async (_, { getState }) => {
     const state = getState() as { bookings: BookingsState };
     const now = Date.now();
-    if (state.bookings.lastFetched && (now - state.bookings.lastFetched < 5 * 60 * 1000)) {
+    if (state.bookings.lastFetched && (now - state.bookings.lastFetched < STALE_TIME_DEFAULT)) {
       return state.bookings.bookings;
     }
     const response = await fetchBookingsAPI();
