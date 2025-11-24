@@ -7,13 +7,15 @@ import RatingDisplay from './RatingDisplay';
 import ActionButton from './ActionButton';
 import { Package } from '../../../types/Package';
 import { useTranslations } from 'next-intl';
+import DeletePackageBtn from './DeletePackageBtn';
 
 interface PackageTableRowProps {
   package: Package;
   onViewDetails: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
-export default function PackageTableRow({ package: pkg, onViewDetails }: PackageTableRowProps) {
+export default function PackageTableRow({ package: pkg, onViewDetails, onDelete }: PackageTableRowProps) {
   const t = useTranslations('PackageTableRow');
 
   return (
@@ -49,10 +51,11 @@ export default function PackageTableRow({ package: pkg, onViewDetails }: Package
           {new Date(pkg.deadline).toLocaleDateString('vi-VN')}
         </div>
       </td>
-      <td className="px-6 py-4 text-right">
+      <td className="px-6 py-4 text-right flex gap-2 justify-end">
         <ActionButton onClick={() => onViewDetails(pkg.id)}>
           {t('viewDetails')}
         </ActionButton>
+        <DeletePackageBtn packageId={pkg.id} onDelete={onDelete} />
       </td>
     </tr>
   );

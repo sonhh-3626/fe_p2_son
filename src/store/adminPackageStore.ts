@@ -15,11 +15,18 @@ type AdminPackageState = {
   setLocationFilter: (l: string) => void;
   setSortConfig: (key: string) => void;
   setCurrentPage: (p: number) => void;
+  deletePackage: (id: number) => void; // Add deletePackage to the store
 };
 
 export const useAdminPackageStore = create<AdminPackageState>((set, get) => ({
   packages: [],
   loading: false,
+
+  deletePackage: (id) =>
+    set((state) => ({
+      packages: state.packages.filter((pkg) => pkg.id !== id),
+      currentPage: 1, // Reset to first page after deletion
+    })),
   searchTerm: '',
   locationFilter: '',
   sortConfig: { key: 'title', direction: 'asc' },

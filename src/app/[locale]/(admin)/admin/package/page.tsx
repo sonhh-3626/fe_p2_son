@@ -9,14 +9,17 @@ import Pagination from '@/components/admin/package/Pagination';
 import { Package, TableColumn } from '@/types/Package';
 import { useEffect, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
-import { Calendar, MapPin, Users, Star } from 'lucide-react';
+import { Calendar, MapPin, Users, Star, Eye } from 'lucide-react';
 import DataTable from '@/components/commons/table/DataTable';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useAdminPackages } from '@/hooks/useAdminPackages';
+import { useRouter } from 'next/navigation';
+import DeletePackageBtn from '@/components/admin/package/DeletePackageBtn';
 
 export default function AdminPackageListPage() {
   const t = useTranslations('PackageListPage');
+  const router = useRouter();
   const {
     loading,
     paginatedPackages,
@@ -31,11 +34,22 @@ export default function AdminPackageListPage() {
     setSortConfig,
     setCurrentPage,
     fetchPackages,
+    deletePackage,
   } = useAdminPackages();
 
   useEffect(() => {
     fetchPackages();
   }, [fetchPackages]);
+
+  const handleDeletePackage = async (id: number) => {
+    try {
+      await deletePackage(id);
+      fetchPackages();
+    } catch (error) {
+      console.error('Error deleting package:', error);
+     // CATCH HANDLE
+    }
+  };
 
   const columns: TableColumn<Package>[] = useMemo(() => [
     {
@@ -122,15 +136,19 @@ export default function AdminPackageListPage() {
       headerAlign: 'right',
       cellAlign: 'right',
       render: (pkg) => (
-        <Link
-          href={`/admin/package/${pkg.id}`}
-          className="px-4 py-2 rounded-lg transition-colors text-sm font-medium bg-blue-600 text-white hover:bg-blue-700"
-        >
-          {t('viewDetailsButton')}
-        </Link>
+        <div className="flex gap-2 justify-end">
+          <Link
+            href={`/admin/package/${pkg.id}`}
+            className="p-2 text-blue-400 hover:text-blue-600 hover:bg-blue-100 rounded-full transition-colors"
+            title={t('viewDetailsButton')}
+          >
+            <Eye size={20} />
+          </Link>
+          <DeletePackageBtn packageId={pkg.id} onDelete={handleDeletePackage} />
+        </div>
       ),
     },
-  ], [t]);
+  ], [t, handleDeletePackage]);
 
   if (loading) {
     return <LoadingState />;
@@ -138,7 +156,7 @@ export default function AdminPackageListPage() {
 
   return (
       <div>
-        <PageHeader onAddNew={() => console.log('Add new package clicked')} />
+        <PageHeader onAddNew={() => router.push('/admin/package/new')} />
 
         <PackageFilters
           searchTerm={searchTerm}

@@ -300,5 +300,31 @@
         "addNewFeature": "New user addition feature will be implemented"
       }
     }
+  },
+  "GenericPageDetail": {
+    "pageDetailTitle": "{title} Details",
+    "defaultDescription": "This section displays data tables, editing forms, and management tools related to {titleLower}.",
+    "addButton": "Add New",
+    "addButtonAria": "Add new {title}"
+  },
+  "LoadingState": {
+    "loadingData": "Loading data..."
+  },
+  "PackageTableRow": {
+    "viewDetails": "View detail",
+    "confirmDelete": "Are you sure you want to delete this package?",
+    "deletePackage": "Delete Package"
+  },
+  "PackageTableHeader": {
+    "package": "Package",
+    "location": "Location",
+    "price": "Price",
+    "rating": "Rating",
+    "participants": "Participants",
+    "deadline": "Deadline",
+    "actions": "Actions"
+  },
+  "AdminPackageList": {
+    "failedToDeletePackage": "Failed to delete package"
   }
 }
