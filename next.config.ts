@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['picsum.photos'],
   },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '50mb',
+    },
+  },
 };
 
 

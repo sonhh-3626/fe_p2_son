@@ -5,16 +5,21 @@ import { useTranslations } from 'next-intl';
 import BookingActionButton from './BookingActionButton';
 import { Booking } from '@/types/Booking';
 import { useRouter } from 'next/navigation';
+
 interface BookingCardActionsProps {
   booking: Booking;
 }
 
 export default function BookingCardActions({ booking }: BookingCardActionsProps) {
   const t = useTranslations('BookingCard');
-  const route = useRouter();
+  const router = useRouter();
 
   const handleManageBooking = () => {
-    route.push(`/bookings/${booking.id}`);
+    router.push(`/bookings/${booking.id}`);
+  };
+
+  const handleSubmitReview = () => {
+    router.push(`/bookings/${booking.id}/review`);
   };
 
   return (
@@ -23,7 +28,10 @@ export default function BookingCardActions({ booking }: BookingCardActionsProps)
         {t('manageBooking')}
       </BookingActionButton>
       {booking.status === 'completed' && (
-        <BookingActionButton className="text-gray-700 hover:text-gray-900 flex items-center gap-1">
+        <BookingActionButton
+          className="text-gray-700 hover:text-gray-900 flex items-center gap-1"
+          onClick={handleSubmitReview}
+        >
           <FiMessageSquare className="w-4 h-4" />
           {t('submitReview')}
         </BookingActionButton>

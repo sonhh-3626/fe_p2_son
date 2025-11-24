@@ -1,4 +1,4 @@
-import { FaBars, FaUser } from 'react-icons/fa';
+import { FaBars, FaBlog, FaUser } from 'react-icons/fa';
 import MenuItem from './MenuItem';
 import { useTranslations } from 'next-intl';
 
@@ -18,6 +18,11 @@ export default function MenuList() {
       icon: <FaBars className="w-5 h-5" />,
       label: t('myBookings'),
       path: "/bookings"
+    },
+    {
+      icon: <FaBlog className="w-5 h-5" />,
+      label: t('myReview'),
+      path: "/review"
     },
     {
       icon: <FaUser className="w-5 h-5" />,
