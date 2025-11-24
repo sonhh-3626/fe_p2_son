@@ -2,6 +2,7 @@
 
 import { Card } from '@/components/ui/Card';
 import { AvatarUpload } from '@/components/user/profile/AvatarUpload';
+import { BankAccountList } from '@/components/user/profile/bank_account/BankAccountList';
 import { PasswordForm } from '@/components/user/profile/PasswordForm';
 import { ProfileForm } from '@/components/user/profile/ProfileForm';
 import { useUserProfile } from '@/hooks/useUserQuery';
@@ -43,7 +44,6 @@ export default function ProfilePage() {
       <div className="max-w-4xl mx-auto space-y-6">
         <h1 className="text-4xl font-bold text-gray-900">{t('yourProfile')}</h1>
 
-
         <Card>
           <AvatarUpload
             currentAvatar={user.avatar}
@@ -55,6 +55,8 @@ export default function ProfilePage() {
           <ProfileForm user={user} />
           <PasswordForm />
         </div>
+
+        <BankAccountList />
       </div>
     </div>
   );
