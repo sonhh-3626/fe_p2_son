@@ -1,5 +1,5 @@
+import GenericPageDetail from "@/components/admin/layout/GenericPageDetail";
 import { MainContent } from "@/components/admin/layout/MainContent";
-import { GenericPageDetail } from "@/components/admin/layout/GenericPageDetail";
 
 export default function AdminBookingPage() {
   return (

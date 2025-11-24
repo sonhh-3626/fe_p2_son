@@ -5,9 +5,10 @@ import TableHeader from '@/components/commons/table/TableHeader';
 interface PackageTableProps {
   packages: Package[];
   onViewDetails: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
-export default function PackageTable({ packages, onViewDetails }: PackageTableProps) {
+export default function PackageTable({ packages, onViewDetails, onDelete }: PackageTableProps) {
   return (
     <div className="bg-white rounded-lg shadow-sm overflow-hidden">
       <div className="overflow-x-auto">
@@ -19,6 +20,7 @@ export default function PackageTable({ packages, onViewDetails }: PackageTablePr
                 key={pkg.id}
                 package={pkg}
                 onViewDetails={onViewDetails}
+                onDelete={onDelete}
               />
             ))}
           </tbody>

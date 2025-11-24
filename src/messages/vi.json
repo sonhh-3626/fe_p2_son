@@ -260,7 +260,9 @@
     "loadingData": "Đang tải dữ liệu..."
   },
   "PackageTableRow": {
-    "viewDetails": "Xem chi tiết"
+    "viewDetails": "Xem chi tiết",
+    "confirmDelete": "Bạn có chắc chắn muốn xóa gói này không?",
+    "deletePackage": "Xóa gói"
   },
   "PackageTableHeader": {
     "package": "Package",
@@ -268,7 +270,10 @@
     "price": "Giá",
     "rating": "Đánh giá",
     "participants": "Người tham gia",
-    "deadline": "Deadline",
+    "deadline": "Hạn chót",
     "actions": "Thao tác"
+  },
+  "AdminPackageList": {
+    "failedToDeletePackage": "Xóa gói thất bại"
   }
 }

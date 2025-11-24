@@ -259,7 +259,9 @@
     "loadingData": "Loading data..."
   },
   "PackageTableRow": {
-    "viewDetails": "View detail"
+    "viewDetails": "View detail",
+    "confirmDelete": "Are you sure you want to delete this package?",
+    "deletePackage": "Delete Package"
   },
   "PackageTableHeader": {
     "package": "Package",
@@ -269,5 +271,8 @@
     "participants": "Participants",
     "deadline": "Deadline",
     "actions": "Actions"
+  },
+  "AdminPackageList": {
+    "failedToDeletePackage": "Failed to delete package"
   }
 }

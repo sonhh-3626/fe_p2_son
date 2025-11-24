@@ -55,7 +55,7 @@ export async function fetchPackages(
 
 export async function fetchPackageData(id: string): Promise<Package | null> {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/packages/${id}`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/admin/package/${id}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

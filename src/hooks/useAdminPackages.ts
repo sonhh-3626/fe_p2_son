@@ -16,7 +16,26 @@ export const useAdminPackages = () => {
     setSortConfig,
     setCurrentPage,
     fetchPackages,
+    deletePackage: deletePackageFromStore,
   } = useAdminPackageStore();
+
+  const deletePackage = async (id: number) => {
+    try {
+      const response = await fetch(`/api/admin/package/${id}`, {
+        method: 'DELETE',
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to delete package');
+      }
+
+      deletePackageFromStore(id); // Update the store after successful API call
+      return true;
+    } catch (error) {
+      console.error('Error deleting package:', error);
+      throw error;
+    }
+  };
 
   const processedPackages = useMemo(() => {
     let result = [...packages];
@@ -78,5 +97,6 @@ export const useAdminPackages = () => {
     setSortConfig,
     setCurrentPage,
     fetchPackages,
+    deletePackage, // Expose the new deletePackage function
   };
 };

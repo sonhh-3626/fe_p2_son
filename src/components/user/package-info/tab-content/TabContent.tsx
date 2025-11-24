@@ -35,7 +35,7 @@ export function TabContent({ active, packageData }: TabContentProps) {
     },
     {
       id: 2,
-      content: <TourLocation location={packageData.location} />,
+      content: <TourLocation mapUrl={packageData.mapUrl} />,
     },
     {
       id: 3,
