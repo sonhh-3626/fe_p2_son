@@ -23,11 +23,19 @@ export default function SignInButton() {
   }
 
   return (
-    <button
-      onClick={() => router.push('/login')}
-      className={`${commonButtonClasses} bg-gray-500 hover:bg-gray-600`}
-    >
-      <span>{t('loginBtn')}</span>
-    </button>
+    <div className="flex flex-col gap-2">
+      <button
+        onClick={() => router.push('/login')}
+        className={`${commonButtonClasses} bg-gray-500 hover:bg-gray-600`}
+      >
+        <span>{t('loginBtn')}</span>
+      </button>
+      <button
+        onClick={() => router.push('/register')}
+        className={`${commonButtonClasses} bg-blue-500 hover:bg-blue-600`}
+      >
+        <span>{t('registerBtn')}</span>
+      </button>
+    </div>
   );
 }

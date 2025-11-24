@@ -1,15 +1,13 @@
 import { useTranslations } from 'next-intl';
 
 interface TourLocationProps {
-  location: string;
+  mapUrl: string;
 }
 
-export default function TourLocation({ location }: TourLocationProps) {
+export default function TourLocation({
+  mapUrl
+}: TourLocationProps) {
   const t = useTranslations('TourLocation');
-  console.log('TourLocation location:', location);
-  if (!location) {
-    return <div>{t('noLocationInfo')}</div>;
-  }
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -18,7 +16,7 @@ export default function TourLocation({ location }: TourLocationProps) {
       </p>
       <div className="relative h-96 w-full mb-8">
         <iframe
-          src={location}
+          src={mapUrl}
           width="100%"
           height="100%"
           style={{ border: 0 }}

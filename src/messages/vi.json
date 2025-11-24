@@ -16,7 +16,13 @@
     "packages": "Gói sắp tới",
     "packagesSubInfo": "Khám phá",
     "packagesMainInfo": "Các gói sắp tới",
-    "getInTouch": "Liên hệ"
+    "getInTouch": "Liên hệ",
+    "guest": "Khách",
+    "myAccount": "Tài khoản của tôi",
+    "welcome": "Chào mừng",
+    "logout": "Đăng xuất",
+    "myBookings": "Đơn đặt chỗ của tôi",
+    "settings": "Cài đặt"
   },
   "Footer": {
     "description": "Du lịch giúp các công ty quản lý thanh toán dễ dàng.",
@@ -72,6 +78,11 @@
     "priceLowToHigh": "Giá từ thấp đến cao",
     "priceHighToLow": "Giá từ cao đến thấp",
     "nameAZ": "Tên (A-Z)"
+  },
+  "SortTool": {
+    "sortBy": "Sắp xếp theo",
+    "sortByDate": "Thời gian checkin",
+    "sortByTitle": "Tên gói"
   },
   "BookForm": {
     "nameRequired": "Tên là bắt buộc",
@@ -179,6 +190,7 @@
     "loginWithGoogle": "Đăng nhập với Google",
     "loginBtn": "Đăng nhập",
     "logoutBtn": "Đăng xuất",
+    "registerBtn": "Đăng ký",
     "processing": "Đang xử lý...",
     "or": "hoặc",
     "noAccount": "Chưa có tài khoản?",
@@ -188,5 +200,31 @@
     "and": "và",
     "privacyPolicy": "Chính sách bảo mật",
     "enterPassword": "Nhập mật khẩu"
+  },
+  "BookingsPage": {
+    "loadingBookings": "Đang tải các đơn đặt chỗ...",
+    "errorLoadingBookings": "Lỗi: {error}",
+    "noBookingsFound": "Không tìm thấy đơn đặt chỗ nào"
+  },
+  "BookingCard": {
+    "checkIn": "Thời gian checkin",
+    "checkOut": "Thời gian checkout",
+    "bookingCode": "Mã",
+    "manageBooking": "Quản lý đơn đặt chỗ",
+    "submitReview": "Gửi đánh giá của bạn",
+    "statusCompleted": "Đã hoàn thành",
+    "statusUpcoming": "Sắp tới",
+    "statusCancelled": "Đã hủy"
+  },
+  "BookingTabs": {
+    "upcoming": "Sắp tới",
+    "completed": "Hoàn tất",
+    "cancelled": "Đã hủy"
+  },
+  "BookingsSlice": {
+    "failedToFetchBookings": "Không thể tải các đơn đặt chỗ"
+  },
+  "SearchTool": {
+    "searchPlaceholder": "Tìm kiếm theo mã, tên gói hoặc địa điểm"
   }
 }

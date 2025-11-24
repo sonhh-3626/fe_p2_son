@@ -26,4 +26,5 @@ export interface Package {
   notIncluded: string[];
   included: string[];
   location: string;
+  mapUrl: string;
 }

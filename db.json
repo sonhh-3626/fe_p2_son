@@ -21,16 +21,10 @@
       "departureTime": "08:00 AM",
       "returnTime": "06:00 PM",
       "dressCode": "Casual",
-      "notIncluded": [
-        "Lunch",
-        "Souvenirs"
-      ],
-      "included": [
-        "Transportation",
-        "Guide",
-        "Entrance Fees"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8534527378736!2d-118.27701908478517!3d34.04211378060612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c63419b2414f%3A0x3e263270a9a66d6!2sLos%20Angeles%20Trade%20Technical%20College!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Lunch", "Souvenirs"],
+      "included": ["Transportation", "Guide", "Entrance Fees"],
+      "location": "Los Angeles Trade Technical College, Los Angeles, USA",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.8534527378736!2d-118.27701908478517!3d34.04211378060612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c63419b2414f%3A0x3e263270a9a66d6!2sLos%20Angeles%20Trade%20Technical%20College!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -103,16 +97,10 @@
       "departureTime": "09:00 AM",
       "returnTime": "05:00 PM",
       "dressCode": "Smart Casual",
-      "notIncluded": [
-        "Dinner",
-        "Personal expenses"
-      ],
-      "included": [
-        "Accommodation",
-        "City Tour",
-        "Breakfast"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d13.37770001584219!3d52.5170368798796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851d7a7e2e3b7%3A0x1e2e2e2e2e2e2e2e!2sBrandenburg%20Gate!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Dinner", "Personal expenses"],
+      "included": ["Accommodation","City Tour", "Breakfast"],
+      "location": "Brandenburg Gate, Berlin, Germany",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d13.37770001584219!3d52.5170368798796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851d7a7e2e3b7%3A0x1e2e2e2e2e2e2e2e!2sBrandenburg%20Gate!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -185,16 +173,10 @@
       "departureTime": "10:00 AM",
       "returnTime": "04:00 PM",
       "dressCode": "Beachwear",
-      "notIncluded": [
-        "Snorkeling gear",
-        "Spa treatments"
-      ],
-      "included": [
-        "Resort stay",
-        "Boat transfers",
-        "Water sports"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2000000000005!2d73.51000000000001!3d4.175000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b40000000000001%3A0x1e2e2e2e2e2e2e2e!2sMal%C3%A9%2C%20Maldives!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Snorkeling gear", "Spa treatments"],
+      "included": ["Resort stay", "Boat transfers", "Water sports"],
+      "location": "Malé, Maldives",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2000000000005!2d73.51000000000001!3d4.175000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b40000000000001%3A0x1e2e2e2e2e2e2e2e!2sMal%C3%A9%2C%20Maldives!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -267,16 +249,10 @@
       "departureTime": "07:30 AM",
       "returnTime": "07:30 PM",
       "dressCode": "Layered clothing",
-      "notIncluded": [
-        "Concert tickets",
-        "Fine dining"
-      ],
-      "included": [
-        "Hotel stay",
-        "Sightseeing bus",
-        "Museum passes"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8600000000003!2d-79.38700000000001!3d43.653226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d1e2e2e2%3A0x1e2e2e2e2e2e2e2e!2sCN%20Tower!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Concert tickets", "Fine dining"],
+      "included": ["Hotel stay", "Sightseeing bus", "Museum passes"],
+      "location": "CN Tower, Toronto, Canada",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.8600000000003!2d-79.38700000000001!3d43.653226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d1e2e2e2%3A0x1e2e2e2e2e2e2e2e!2sCN%20Tower!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -349,16 +325,10 @@
       "departureTime": "08:30 AM",
       "returnTime": "06:30 PM",
       "dressCode": "Modest",
-      "notIncluded": [
-        "Car rental",
-        "Souvenirs"
-      ],
-      "included": [
-        "Guided tour",
-        "Local cuisine tasting",
-        "Hotel pickup"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d49.8670368798796!3d40.3776706798796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030700000000001%3A0x1e2e2e2e2e2e2e2e!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Car rental", "Souvenirs"],
+      "included": ["Guided tour", "Local cuisine tasting", "Hotel pickup"],
+      "location": "Baku, Azerbaijan",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d49.8670368798796!3d40.3776706798796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030700000000001%3A0x1e2e2e2e2e2e2e2e!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -431,16 +401,10 @@
       "departureTime": "09:00 AM",
       "returnTime": "05:00 PM",
       "dressCode": "Comfortable",
-      "notIncluded": [
-        "Visa fees",
-        "Shopping"
-      ],
-      "included": [
-        "Flight tickets",
-        "Accommodation",
-        "Cultural shows"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2000000000005!2d116.397499!3d39.904202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05296e2e2e2e2%3A0x1e2e2e2e2e2e2e2e!2sForbidden%20City!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Visa fees", "Shopping"],
+      "included": ["Flight tickets", "Accommodation", "Cultural shows"],
+      "location": "Forbidden City, Beijing, China",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2000000000005!2d116.397499!3d39.904202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05296e2e2e2e2%3A0x1e2e2e2e2e2e2e2e!2sForbidden%20City!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -513,16 +477,10 @@
       "departureTime": "08:00 AM",
       "returnTime": "06:00 PM",
       "dressCode": "Respectful",
-      "notIncluded": [
-        "Souvenirs",
-        "Optional tours"
-      ],
-      "included": [
-        "Bullet train passes",
-        "Traditional meals",
-        "Hot spring access"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8534527378736!2d139.76701908478517!3d35.68948758060612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000000000000001%3A0x1e2e2e2e2e2e2e2e!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Souvenirs", "Optional tours"],
+      "included": ["Bullet train passes", "Traditional meals", "Hot spring access"],
+      "location": "Tokyo, Japan",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8534527378736!2d139.76701908478517!3d35.68948758060612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000000000000001%3A0x1e2e2e2e2e2e2e2e!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -595,16 +553,10 @@
       "departureTime": "09:30 AM",
       "returnTime": "05:30 PM",
       "dressCode": "Elegant",
-      "notIncluded": [
-        "Wine tasting",
-        "Shopping"
-      ],
-      "included": [
-        "Paris city tour",
-        "Louvre Museum entry",
-        "Seine river cruise"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d2.2944813999999997!3d48.858370000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2e2e2e2e2e%3A0x1e2e2e2e2e2e2e2e!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Wine tasting", "Shopping"],
+      "included": ["Paris city tour", "Louvre Museum entry", "Seine river cruise"],
+      "location": "Eiffel Tower, Paris, France",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d2.2944813999999997!3d48.858370000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2e2e2e2e2e%3A0x1e2e2e2e2e2e2e2e!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -677,16 +629,10 @@
       "departureTime": "08:45 AM",
       "returnTime": "06:45 PM",
       "dressCode": "Stylish",
-      "notIncluded": [
-        "Gondola ride",
-        "Cooking class"
-      ],
-      "included": [
-        "Colosseum tour",
-        "Vatican City visit",
-        "Pizza making workshop"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d12.4963655!3d41.9027835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f5f5f5f5%3A0x1e2e2e2e2e2e2e2e!2sColosseum!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Gondola ride", "Cooking class"],
+      "included": ["Colosseum tour", "Vatican City visit", "Pizza making workshop"],
+      "location": "Colosseum, Rome, Italy",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d12.4963655!3d41.9027835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f5f5f5f5%3A0x1e2e2e2e2e2e2e2e!2sColosseum!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -759,16 +705,10 @@
       "departureTime": "07:00 AM",
       "returnTime": "08:00 PM",
       "dressCode": "Warm clothing",
-      "notIncluded": [
-        "Ski equipment rental",
-        "Wildlife tours"
-      ],
-      "included": [
-        "National park passes",
-        "Guided hikes",
-        "Local craft beer tasting"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d-123.120738!3d49.282730!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143300001%3A0x1e2e2e2e2e2e2e2e!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Ski equipment rental", "Wildlife tours"],
+      "included": ["National park passes", "Guided hikes", "Local craft beer tasting"],
+      "location": "Vancouver, BC, Canada",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d-123.120738!3d49.282730!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f143300001%3A0x1e2e2e2e2e2e2e2e!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -841,16 +781,10 @@
       "departureTime": "10:00 AM",
       "returnTime": "04:00 PM",
       "dressCode": "Modest and respectful",
-      "notIncluded": [
-        "Desert safari",
-        "Luxury shopping"
-      ],
-      "included": [
-        "Burj Khalifa tickets",
-        "Dubai Mall visit",
-        "Dhow cruise"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d55.270828!3d25.204849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433333333333%3A0x1e2e2e2e2e2e2e2e!2sBurj%20Khalifa!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Desert safari", "Luxury shopping"],
+      "included": ["Burj Khalifa tickets", "Dubai Mall visit", "Dhow cruise"],
+      "location": "Burj Khalifa, Dubai, United Arab Emirates",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d55.270828!3d25.204849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433333333333%3A0x1e2e2e2e2e2e2e2e!2sBurj%20Khalifa!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -923,16 +857,10 @@
       "departureTime": "09:00 AM",
       "returnTime": "05:00 PM",
       "dressCode": "Light and comfortable",
-      "notIncluded": [
-        "Thai massage",
-        "Island hopping"
-      ],
-      "included": [
-        "Temple tours",
-        "Floating market visit",
-        "Thai cooking class"
-      ],
-      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d100.493024!3d13.756330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2999999999999%3A0x1e2e2e2e2e2e2e2e!2sWat%20Arun!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
+      "notIncluded": ["Thai massage", "Island hopping"],
+      "included": ["Temple tours", "Floating market visit", "Thai cooking class"],
+      "location": "Wat Arun, Bangkok, Thailand",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d100.493024!3d13.756330!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2999999999999%3A0x1e2e2e2e2e2e2e2e!2sWat%20Arun!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
         {
           "day": 1,
@@ -997,6 +925,62 @@
       "username": "hahongson",
       "email": "ha.hong.son@sun-asterisk.com",
       "password": "$2b$10$Nceuw574W/Psn1KwQEp16eApYN1Na8mvV3WMMoqqNNDBGDsetQ9U."
+    }
+  ],
+  "bookings": [
+    {
+      "userId": "1",
+      "id": 1636810450,
+      "packageId": 1,
+      "status": "completed",
+      "checkIn": "Th 4, 13 Thg 8",
+      "checkOut": "Th 6, 15 Thg 8",
+      "createdAt": "2024-08-01"
+    },
+    {
+      "userId": "1",
+      "id": 1636810451,
+      "packageId": 2,
+      "status": "upcoming",
+      "checkIn": "Th 2, 20 Thg 11",
+      "checkOut": "Th 7, 25 Thg 11",
+      "createdAt": "2024-11-10"
+    },
+    {
+      "userId": "1",
+      "id": 1636810452,
+      "packageId": 3,
+      "status": "upcoming",
+      "checkIn": "Th 3, 18 Thg 12",
+      "checkOut": "Th 6, 21 Thg 12",
+      "createdAt": "2024-11-12"
+    },
+    {
+      "userId": "1",
+      "id": 1636810453,
+      "packageId": 4,
+      "status": "cancelled",
+      "checkIn": "Th 5, 10 Thg 10",
+      "checkOut": "Th 2, 15 Thg 10",
+      "createdAt": "2024-09-25"
+    },
+    {
+      "userId": "1",
+      "id": 1636810454,
+      "packageId": 5,
+      "status": "completed",
+      "checkIn": "Th 2, 5 Thg 9",
+      "checkOut": "Th 7, 10 Thg 9",
+      "createdAt": "2024-08-20"
+    },
+    {
+      "userId": "1",
+      "id": 1636810455,
+      "packageId": 6,
+      "status": "upcoming",
+      "checkIn": "Th 4, 1 Thg 12",
+      "checkOut": "Th 2, 6 Thg 12",
+      "createdAt": "2024-11-14"
     }
   ]
 }
