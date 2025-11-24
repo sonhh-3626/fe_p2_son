@@ -12,4 +12,4 @@ export const bookingSchema = (t: any) => {
   });
 };
 
-export type BookingRequestData = z.infer<ReturnType<typeof createBookingSchema>>;
+export type BookingRequestData = z.infer<ReturnType<typeof bookingSchema>>;
