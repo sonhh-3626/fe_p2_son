@@ -22,6 +22,8 @@ export interface Booking {
   numberOfTickets: number;
   message?: string;
   paymentMethod?: string;
+  paymentStatus?: 'paid' | 'failed' | 'unpaid';
+  paidAt?: string;
 }
 
 export interface BookingWithReview {

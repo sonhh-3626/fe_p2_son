@@ -1,6 +1,6 @@
 'use client';
 
-import { useForm, Controller } from 'react-hook-form';
+import { useForm, Controller, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { X } from 'lucide-react';
@@ -34,7 +34,7 @@ export function BankAccountForm({ account, onClose }: BankAccountFormProps) {
     setError,
   } = useForm<BankAccountFormData>({
     resolver: zodResolver(bankAccountSchema),
-    defaultValues: {  
+    defaultValues: {
       bankName: account?.bankName || '',
       accountNumber: account?.accountNumber || '',
       accountHolder: account?.accountHolder || '',
@@ -97,7 +97,6 @@ export function BankAccountForm({ account, onClose }: BankAccountFormProps) {
 
         {/* Form */}
         <form onSubmit={handleSubmit(onSubmit)} className="p-6 space-y-4">
-          {/* Bank Name - Using Controller for custom component */}
           <Controller
             name="bankName"
             control={control}

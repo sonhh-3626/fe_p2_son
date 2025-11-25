@@ -87,3 +87,10 @@ export function createReview(db: any, data: {
   db.reviews.push(newReview);
   return newReview;
 }
+
+export const calculateTotalPrice = (booking: Booking): number => {
+  if (booking.package && booking.package.price) {
+    return booking.numberOfTickets * booking.package.price;
+  }
+  return 0;
+};
