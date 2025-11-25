@@ -104,8 +104,15 @@
       "departureTime": "09:00 AM",
       "returnTime": "05:00 PM",
       "dressCode": "Smart Casual",
-      "notIncluded": ["Dinner", "Personal expenses"],
-      "included": ["Accommodation", "City Tour", "Breakfast"],
+      "notIncluded": [
+        "Dinner",
+        "Personal expenses"
+      ],
+      "included": [
+        "Accommodation",
+        "City Tour",
+        "Breakfast"
+      ],
       "location": "Brandenburg Gate, Berlin, Germany",
       "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.407496200969!2d13.37770001584219!3d52.5170368798796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851d7a7e2e3b7%3A0x1e2e2e2e2e2e2e2e!2sBrandenburg%20Gate!5e0!3m2!1sen!2sus!4v1629789421000!5m2!1sen!2sus",
       "packagePlans": [
@@ -835,7 +842,7 @@
         "https://picsum.photos/seed/124/600/400"
       ],
       "deadline": "2025-10-15",
-      "participants": 95,
+      "participants": 2,
       "shortDescription": "Qui Temporam Voluptate Qui Quia Commodi Rem Praesentium Alias Et.",
       "reviews": 1,
       "description": "Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces, ancient ruins and ornate temples displaying figures of Buddha. In Bangkok, the capital, an ultramodern cityscape rises next to quiet canalside communities and the iconic temples of Wat Arun, Wat Pho and the Emerald Buddha Temple (Wat Phra Kaeo). Nearby beach resorts include bustling Pattaya and fashionable Hua Hin.",
@@ -905,29 +912,6 @@
           "activities": []
         }
       ]
-    },
-    {
-      "title": "New York",
-      "price": 10000,
-      "rating": 0,
-      "reviews": 0,
-      "participants": 23,
-      "deadline": "2025-11-20",
-      "shortDescription": "New",
-      "img": "https://picsum.photos/seed/5/300/200",
-      "destination": "",
-      "departure": "",
-      "departureTime": "",
-      "returnTime": "",
-      "dressCode": "",
-      "description": "",
-      "included": [],
-      "notIncluded": [],
-      "packagePlans": [],
-      "images": [],
-      "location": "",
-      "mapUrl": "",
-      "id": 13
     }
   ],
   "users": [
@@ -954,6 +938,13 @@
       "phone": "098-765-4321",
       "location": "Ho Chi Minh, Vietnam",
       "status": "active"
+    },
+    {
+      "id": "3",
+      "username": "hason",
+      "email": "ha.hong.son@sun-asterisk.com",
+      "password": "$2b$10$UCkihTDhzTYE7Iiw12pRk.l0BISTNHf96ahZWueUXBtzVB03f0pEW",
+      "role": "user"
     }
   ],
   "bookings": [
@@ -1075,7 +1066,93 @@
       "phone": "0397541644",
       "numberOfTickets": 5,
       "paymentMethod": "Bank Transfer",
-      "message": "Mua cho cháu"
+      "message": "Mua cho chau"
+    },
+    {
+      "id": 1636810458,
+      "userId": "3",
+      "packageId": 4,
+      "status": "upcoming",
+      "checkIn": "2025-11-26",
+      "checkOut": "2025-11-26",
+      "createdAt": "2025-11-25T06:08:04.965Z",
+      "name": "Ha Hong Son",
+      "email": "idontwannaseeyouanymore@gmail.com",
+      "phone": "0397541644",
+      "numberOfTickets": 3,
+      "message": "Check",
+      "paymentStatus": "paid",
+      "paymentMethod": "bank_transfer",
+      "paidAt": "2025-11-25T06:12:29.517Z",
+      "updatedAt": "2025-11-25T06:12:29.526Z"
+    },
+    {
+      "id": 1636810459,
+      "userId": "113928559472374782341",
+      "packageId": 12,
+      "status": "upcoming",
+      "checkIn": "2025-11-29",
+      "checkOut": "2025-11-29",
+      "createdAt": "2025-11-25T08:09:33.772Z",
+      "name": "Ha Hong Son",
+      "email": "sonhh2003@gmail.com",
+      "phone": "0397541644",
+      "numberOfTickets": 5,
+      "message": ""
+    },
+    {
+      "id": 1636810460,
+      "userId": "100317063445681371901",
+      "packageId": 12,
+      "status": "upcoming",
+      "checkIn": "2025-11-29",
+      "checkOut": "2025-11-29",
+      "createdAt": "2025-11-25T08:15:28.959Z",
+      "name": "Son Ha",
+      "email": "ha.hong.son@sun-asterisk.com",
+      "phone": "0397541644",
+      "numberOfTickets": 2,
+      "message": ""
+    },
+    {
+      "id": 1636810461,
+      "userId": 2,
+      "packageId": 12,
+      "status": "upcoming",
+      "checkIn": "2025-11-28",
+      "checkOut": "2025-11-28",
+      "createdAt": "2025-11-25T08:26:46.949Z",
+      "name": "Son Ha",
+      "email": "ha.hong.son@sun-asterisk.com",
+      "phone": "0397541644",
+      "numberOfTickets": 5,
+      "message": ""
+    }
+  ],
+  "bank_accounts": [
+    {
+      "id": 1,
+      "userId": 3,
+      "bankName": "Vietcombank",
+      "accountNumber": "039712342893",
+      "accountHolder": "Ha Hong Son",
+      "isDefault": true,
+      "createdAt": "2025-11-25T08:55:27.218Z",
+      "updatedAt": "2025-11-25T08:55:27.218Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "bookingId": 1636810454,
+      "userId": "113928559472374782341",
+      "rating": 5,
+      "title": "NewNewNewNew",
+      "content": "NewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNewNew",
+      "images": [
+        "temp_image_url/Screenshot from 2025-11-25 05-49-30.png"
+      ],
+      "createdAt": "2025-11-25T07:00:15.239Z"
     }
   ]
 }

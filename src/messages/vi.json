@@ -19,6 +19,7 @@
     "getInTouch": "Liên hệ",
     "guest": "Khách",
     "myAccount": "Tài khoản của tôi",
+    "myReview": "Review của tôi",
     "welcome": "Chào mừng",
     "logout": "Đăng xuất",
     "myBookings": "Đơn đặt chỗ của tôi",
@@ -352,10 +353,10 @@
     "updateButton": "Cập nhật thông tin"
   },
   "ProfilePage": {
-    "loading": "[translate:Đang tải...]",
-    "error": "[translate:Lỗi]",
-    "userNotFound": "[translate:Không tìm thấy người dùng]",
-    "tryAgain": "[translate:Thử lại]",
-    "yourProfile": "[translate:Profile của bạn]"
+    "loading": "Đang tải...",
+    "error": "Lỗi",
+    "userNotFound": "Không tìm thấy người dùng",
+    "tryAgain": "Thử lại",
+    "yourProfile": "Profile của bạn"
   }
 }

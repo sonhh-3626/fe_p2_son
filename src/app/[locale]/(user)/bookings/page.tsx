@@ -26,6 +26,7 @@ export default function BookingsPage() {
   }, [dispatch]);
 
   const totalPages = Math.ceil(filteredBookings.length / ITEMS_PER_PAGE);
+  console.log(filteredBookings);
   const paginatedBookings = filteredBookings.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE

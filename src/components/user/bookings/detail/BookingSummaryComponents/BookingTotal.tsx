@@ -11,7 +11,7 @@ export default function BookingTotal({ total }: BookingTotalProps) {
     <div className="border-t-2 border-gray-900 pt-4 mb-6">
       <div className="flex justify-between items-center">
         <span className="text-lg font-bold text-gray-900">{t('total')}:</span>
-        <span className="text-2xl font-bold text-gray-900">{total.toLocaleString()} VNĐ</span>
+        <span className="text-2xl font-bold text-gray-900">{total.toLocaleString()} $</span>
       </div>
     </div>
   );

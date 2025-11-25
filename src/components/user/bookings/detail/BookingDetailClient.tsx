@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { Booking } from '@/types/Booking';
 import ContactInfo from './ContactInfo';
 import PaymentMethod from './PaymentMethod';
@@ -13,12 +13,12 @@ interface BookingDetailClientProps {
 export default function BookingDetailClient({ initialBooking }: BookingDetailClientProps) {
   const [booking, setBooking] = useState<Booking>(initialBooking);
 
-  const handleBookingChange = useCallback((updatedFields: Partial<Booking>) => {
+  const handleBookingChange = (updatedFields: Partial<Booking>) => {
     setBooking(prevBooking => ({
       ...prevBooking,
       ...updatedFields,
     }));
-  }, []);
+  }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

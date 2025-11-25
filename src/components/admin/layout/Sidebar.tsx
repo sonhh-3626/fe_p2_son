@@ -1,22 +1,27 @@
-import React, {useCallback} from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { MdClose } from 'react-icons/md';
 import { ADMIN_PAGE_TABS } from '@/constants/adminPages';
 import AdminLogoutButton from '@/components/admin/layout/AdminLogoutButton';
 import Logo from '@/components/commons/Logo';
 
-
-export const AdminSidebar: React.FC<{
+interface AdminSidebarProps {
   isSidebarOpen: boolean;
   closeSidebar: () => void;
   onOpenLogoutModal: () => void;
-}> = ({ isSidebarOpen, closeSidebar, onOpenLogoutModal }) => {
+}
+
+
+export default function AdminSidebar({
+  isSidebarOpen,
+  closeSidebar,
+  onOpenLogoutModal
+}: AdminSidebarProps) {
   const router = useRouter();
   const pathname = usePathname();
 
-  const navigateTo = useCallback((href: string) => {
+  const navigateTo = (href: string) => {
     router.push(href);
-  }, [router]);
+  }
 
   return (
     <div

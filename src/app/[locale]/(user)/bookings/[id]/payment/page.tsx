@@ -19,7 +19,6 @@ export default async function BookingPaymentPage({ params }: PaymentPageProps) {
 
   const bookingId = Number((await params).id);
 
-  // Fetch booking from json-server
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/bookings/${bookingId}`);
   if (!res.ok) {
     notFound();

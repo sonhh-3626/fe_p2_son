@@ -157,7 +157,7 @@ export default function PaymentPage({ bookingId, amount }: PaymentPageProps) {
             <div className="flex items-center justify-between">
               <span className="text-gray-600">Tổng thanh toán:</span>
               <span className="text-3xl font-bold text-orange-600">
-                {amount.toLocaleString('vi-VN')} VNĐ
+                {amount.toLocaleString('vi-VN')} $
               </span>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function PaymentPage({ bookingId, amount }: PaymentPageProps) {
                       Bạn chưa liên kết tài khoản ngân hàng nào
                     </p>
                     <button
-                      onClick={() => router.push('/profile/bank-accounts')}
+                      onClick={() => router.push('/profile')}
                       className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                     >
                       Thêm tài khoản
@@ -374,7 +374,7 @@ export default function PaymentPage({ bookingId, amount }: PaymentPageProps) {
                   ) : (
                     <>
                       <CreditCard className="w-5 h-5" />
-                      <span>Thanh toán {amount.toLocaleString('vi-VN')} VNĐ</span>
+                      <span>Thanh toán {amount.toLocaleString('vi-VN')} $</span>
                     </>
                   )}
                 </button>

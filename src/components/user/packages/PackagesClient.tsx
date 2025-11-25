@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import PackagesContent from './PackagesContent';
 import FilterSidebar from '@/components/user/packages/filter/FilterSidebar';
@@ -32,7 +32,7 @@ export default function PackagesClient({
   const [whereQuery, setWhereQuery] = useState('');
   const [dateQuery, setDateQuery] = useState('');
 
-  const fetchData = useCallback(async () => {
+  const fetchData = async () => {
     try {
       const data = await fetchPackages(
         sortType,
@@ -51,15 +51,7 @@ export default function PackagesClient({
     } catch (error) {
       console.error('Failed to fetch packages:', error);
     }
-  }, [
-    sortType,
-    priceRange,
-    searchQuery,
-    whereQuery,
-    dateQuery,
-    currentPage,
-    itemsPerPage,
-  ]);
+  }
 
   useEffect(() => {
     fetchData();
