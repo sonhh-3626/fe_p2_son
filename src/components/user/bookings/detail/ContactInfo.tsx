@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { z } from 'zod';
 import { FaRegUser } from 'react-icons/fa6';
 import { TfiEmail } from 'react-icons/tfi';
-import { FiPhone } from 'react-icons/fi';
+import { FiCalendar, FiPhone } from 'react-icons/fi';
 import { AiOutlineMessage } from 'react-icons/ai';
 import { LuTicketsPlane } from 'react-icons/lu';
 import { useTranslations } from 'next-intl';
@@ -26,6 +26,7 @@ export default function ContactInfo({ booking, onBookingChange }: ContactInfoPro
     name: z.string().min(1, t('nameRequired')),
     email: z.string().email(t('invalidEmail')),
     phone: z.string().min(10, t('phoneMinLength')).max(15, t('phoneMaxLength')),
+    birthday: z.string().min(1, t('dateRequired')),
     message: z.string().optional(),
     numberOfTickets: z.number({ message: t('ticketsMustBeNumber') }).min(1, t('ticketsRequired'))
   })
@@ -37,6 +38,7 @@ export default function ContactInfo({ booking, onBookingChange }: ContactInfoPro
     email: '',
     phone: '',
     message: '',
+    birthday: '',
     numberOfTickets: 0,
   });
 
@@ -47,6 +49,7 @@ export default function ContactInfo({ booking, onBookingChange }: ContactInfoPro
         email: booking.email,
         phone: booking.phone,
         message: booking.message,
+        birthday: booking.birthday,
         numberOfTickets: booking.numberOfTickets,
       });
     }
@@ -63,6 +66,47 @@ export default function ContactInfo({ booking, onBookingChange }: ContactInfoPro
       return () => clearTimeout(timer);
     }
   }, [message]);
+
+  const formattedBirthday = () => {
+    if (!formData.birthday) return '';
+    const date = new Date(formData.birthday);
+    return !isNaN(date.getTime()) ? date.toISOString().split('T')[0] : '';
+  }
+
+  const [remainingSlots, setRemainingSlots] = useState<number | null>(null);
+
+  const checkPackageAvailability = async () => {
+    if (!booking.package) {
+      setMessage({ type: 'error', text: t('packageNotFound') });
+      return false;
+    }
+    const packageId = booking.package.id;
+    try {
+      const response = await fetch(`/api/packages/${packageId}/check-availability`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          packageId: packageId,
+          numberOfTickets: Number(formData.numberOfTickets),
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.ok) {
+        setMessage({ type: 'success', text: t('availabilitySuccess') });
+        setRemainingSlots(result.remainingSlots);
+        return true;
+      } else {
+        setRemainingSlots(result.remainingSlots ?? null);
+        setMessage({ type: 'error', text: result.message + `. Chỉ còn lại ${remainingSlots} vé cho chuyến đi này.` });
+        return false;
+      }
+    } catch (err) {
+      setMessage({ type: 'error', text: t('availabilityError') });
+      return false;
+    }
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -90,19 +134,22 @@ export default function ContactInfo({ booking, onBookingChange }: ContactInfoPro
   const handleUpdateInfo = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      try {
-        const updatedBookingResponse = await updateBookingAPI(booking.id, formData);
-        if (updatedBookingResponse) {
-          setMessage({ type: 'success', text: t('updateSuccess') });
-          onBookingChange(formData);
-        } else {
-          setMessage({ type: 'error', text: t('updateFailed') });
+        const availability = await checkPackageAvailability();
+        if(availability) {
+          try {
+            const updatedBookingResponse = await updateBookingAPI(booking.id, formData);
+            if (updatedBookingResponse) {
+              setMessage({ type: 'success', text: t('updateSuccess') });
+              onBookingChange(formData);
+            } else {
+              setMessage({ type: 'error', text: t('updateFailed') });
+            }
+          } catch (error) {
+            console.error('Failed to update booking:', error);
+            setMessage({ type: 'error', text: t('updateFailed') });
+          }
         }
-      } catch (error) {
-        console.error('Failed to update booking:', error);
-        setMessage({ type: 'error', text: t('updateFailed') });
       }
-    }
   };
 
   return (
@@ -143,6 +190,17 @@ export default function ContactInfo({ booking, onBookingChange }: ContactInfoPro
           onChange={handleChange}
           iconClass={<FiPhone className='text-[#00000042]' />}
           errorMessage={errors?.phone?._errors[0]}
+          disabled={isReadOnly}
+        />
+        <FormField
+          label={t('datePlaceholder')}
+          name="birthday"
+          type="date"
+          placeholder={t('datePlaceholder')}
+          value={formattedBirthday()}
+          onChange={handleChange}
+          iconClass={<FiCalendar className='text-[#00000042]' />}
+          errorMessage={errors?.birthday?._errors[0]}
           disabled={isReadOnly}
         />
         <FormField

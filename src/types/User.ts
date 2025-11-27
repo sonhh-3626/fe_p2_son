@@ -9,4 +9,5 @@ export interface User {
   phone?: string;
   location?: string;
   status: 'active' | 'inactive';
+  birthday?: string;
 }

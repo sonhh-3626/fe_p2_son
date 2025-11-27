@@ -6,7 +6,7 @@ export const bookingSchema = (t: any) => {
     name: z.string().min(1, t('nameRequired')),
     email: z.string().email(t('invalidEmail')),
     phone: z.string().min(10, t('phoneMinLength')).max(15, t('phoneMaxLength')),
-    date: z.string().min(1, t('dateRequired')),
+    birthday: z.string().min(1, t('dateRequired')),
     numberOfTickets: z.number({ message: t('ticketsNumber') }).min(1, t('ticketsRequired')),
     message: z.string().optional(),
   });
